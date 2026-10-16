@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F5F2EB"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#D8D3C8" stroke-width="2"/>
+  
+  <circle cx="100" cy="110" r="7" fill="#2E6B55"/>
+  <text x="122" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" letter-spacing="3" fill="#6C6A64" font-weight="600">PERSONAL PORTFOLIO &amp; PROOF-OF-WORK</text>
+
+  <text x="100" y="280" font-family="Georgia, serif" font-size="76" font-weight="700" fill="#1F201D" letter-spacing="-2">Sahil Tomar</text>
+  <text x="100" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" fill="#3D3E39">Product · Operations · Strategy · AI &amp; Software</text>
+  <text x="100" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#6C6A64">Turning ambiguous problems into structured decisions and working systems.</text>
+
+  <line x1="100" y1="480" x2="1100" y2="480" stroke="#E8E4DC" stroke-width="1.5"/>
+  <text x="100" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#6C6A64">sahiltomar.com</text>
+  <text x="1100" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#C4651A" font-weight="600" text-anchor="end">Founder, CevonX</text>
+</svg>
