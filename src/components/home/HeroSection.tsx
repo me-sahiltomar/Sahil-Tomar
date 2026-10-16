@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="pt-14 pb-16 sm:pt-20 sm:pb-24 border-b border-[#E4E4E7] bg-white">
       <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="w-full max-w-6xl space-y-7">
+        <div className="w-full space-y-7">
           {/* Top Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECFDF5] border border-[#A7F3D0] text-xs font-mono font-medium tracking-wider text-[#059669] select-none whitespace-nowrap">
             <span className="h-1.5 w-1.5 rounded-full bg-[#059669] shrink-0" aria-hidden="true" />
@@ -14,7 +14,7 @@ export function HeroSection() {
           </div>
 
           {/* H1 Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-[#09090B] tracking-tight leading-[1.12]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-[#09090B] tracking-tight leading-[1.12] max-w-5xl">
             Decoding startup bottlenecks and engineering practical AI systems.
           </h1>
 
@@ -36,7 +36,7 @@ export function HeroSection() {
           </div>
 
           {/* 3-Column Metadata Strip (Below CTAs, separated by top border) */}
-          <div className="pt-8 mt-8 border-t border-[#E4E4E7] w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
+          <div className="pt-8 mt-8 border-t border-[#E4E4E7] w-full grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
             <div className="space-y-1">
               <span className="block text-[11px] font-mono uppercase tracking-widest text-zinc-400 font-medium">
                 PRIMARY FOCUS
