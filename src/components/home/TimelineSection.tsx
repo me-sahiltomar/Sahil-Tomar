@@ -6,7 +6,7 @@ import { ExternalLink } from "lucide-react";
 export function TimelineSection() {
   return (
     <section id="timeline" className="py-16 sm:py-20 md:py-24 border-b border-[#E4E4E7] bg-[#FAFAFA]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeader
           eyebrow="03 / CHRONOLOGICAL TRACK RECORD"
           heading="Experience &amp; Execution Timeline"

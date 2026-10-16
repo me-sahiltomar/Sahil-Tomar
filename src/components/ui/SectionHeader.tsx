@@ -23,7 +23,7 @@ export function SectionHeader({
         {heading}
       </h2>
       {description && (
-        <p className="text-sm sm:text-base text-[#71717A] max-w-2xl leading-relaxed">
+        <p className="text-sm sm:text-base text-[#71717A] max-w-3xl leading-relaxed">
           {description}
         </p>
       )}

@@ -15,7 +15,7 @@ export function CaseStudiesSection() {
 
   return (
     <section id="case-studies" className="py-16 sm:py-20 md:py-24 border-b border-[#E4E4E7] bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <SectionHeader
           eyebrow="02 / STRATEGIC DIAGNOSTICS & CASE STUDIES"
           heading="0-to-1 Venture Forensics & Cross-Border Sprints"
@@ -46,7 +46,7 @@ export function CaseStudiesSection() {
               <h3 className="text-2xl sm:text-3xl font-bold text-[#09090B] tracking-tight">
                 {featured.title}
               </h3>
-              <p className="text-base text-zinc-600 leading-relaxed max-w-3xl">
+              <p className="text-base text-zinc-600 leading-relaxed max-w-4xl">
                 {featured.summary}
               </p>
             </div>

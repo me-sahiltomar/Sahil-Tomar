@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-[#E4E4E7] bg-white py-12 sm:py-16 text-zinc-600 text-xs sm:text-sm">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 pb-12 border-b border-[#E4E4E7]">
           {/* Column 1: Identity & Architect Statement */}
           <div className="space-y-3">

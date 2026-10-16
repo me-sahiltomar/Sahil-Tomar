@@ -4,7 +4,7 @@ import { Mail, ArrowUpRight } from "lucide-react";
 export function ContactSection() {
   return (
     <section id="contact" className="py-16 sm:py-20 md:py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Rounded dark container matching productstudio.cevonx.com and aligned with outer grid */}
         <div className="w-full rounded-2xl border border-zinc-800 bg-[#09090B] text-white p-8 sm:p-10 md:p-12 shadow-md">
           <div className="w-full space-y-8">
@@ -15,7 +15,7 @@ export function ContactSection() {
             </div>
 
             {/* Headline */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white leading-tight max-w-4xl">
               Ready to eliminate bottlenecks and ship high-leverage systems?
             </h2>
 

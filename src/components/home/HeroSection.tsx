@@ -5,8 +5,8 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="pt-14 pb-16 sm:pt-20 sm:pb-24 border-b border-[#E4E4E7] bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-5xl space-y-7">
+      <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="w-full max-w-6xl space-y-7">
           {/* Top Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECFDF5] border border-[#A7F3D0] text-xs font-mono font-medium tracking-wider text-[#059669] select-none whitespace-nowrap">
             <span className="h-1.5 w-1.5 rounded-full bg-[#059669] shrink-0" aria-hidden="true" />
@@ -19,7 +19,7 @@ export function HeroSection() {
           </h1>
 
           {/* Subtitle / Executive Thesis */}
-          <p className="text-base sm:text-lg md:text-xl text-zinc-600 leading-relaxed max-w-3xl">
+          <p className="text-base sm:text-lg md:text-xl text-zinc-600 leading-relaxed max-w-4xl">
             Computer Science graduate and AI-augmented product builder based in Delhi NCR. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
           </p>
 
@@ -36,7 +36,7 @@ export function HeroSection() {
           </div>
 
           {/* 3-Column Metadata Strip (Below CTAs, separated by top border) */}
-          <div className="pt-8 mt-8 border-t border-[#E4E4E7] w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
+          <div className="pt-8 mt-8 border-t border-[#E4E4E7] w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
             <div className="space-y-1">
               <span className="block text-[11px] font-mono uppercase tracking-widest text-zinc-400 font-medium">
                 PRIMARY FOCUS
