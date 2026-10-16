@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { PRODUCTS_DATA, ProductItem } from "@/content/portfolioData";
+import { PRODUCTS_DATA } from "@/content/portfolioData";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -10,8 +10,6 @@ import {
   Compass,
   Target,
   Activity,
-  ExternalLink,
-  ArrowRight,
   Layers,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -104,13 +102,13 @@ export function ProductsSection() {
         </div>
 
         {/* 2-Column Desktop Grid / 1-Column Mobile Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="flex flex-col justify-between rounded-lg border border-[#E4E4E7] bg-white p-6 sm:p-7 shadow-xs hover:border-zinc-300 transition-all duration-150"
+              className="flex flex-col h-full justify-between rounded-lg border border-[#E4E4E7] bg-white p-6 sm:p-7 shadow-xs hover:border-zinc-300 transition-all duration-150"
             >
-              <div className="space-y-4">
+              <div className="space-y-4 flex flex-col flex-1">
                 {/* Header: Glyph, Category, Name & Status Badge */}
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-3">
@@ -134,18 +132,18 @@ export function ProductsSection() {
                         ? "beta"
                         : "archived"
                     }
-                    label={`• ${product.statusLabel}`}
+                    label={product.statusLabel}
                   />
                 </div>
 
-                {/* Subtitle tag */}
-                <p className="text-xs font-mono text-zinc-500">
-                  {product.subtitle}
+                {/* Primary Headline FIRST */}
+                <p className="text-base font-semibold text-zinc-950 leading-snug">
+                  {product.headline}
                 </p>
 
-                {/* Main Headline */}
-                <p className="text-sm font-semibold text-[#09090B] leading-snug">
-                  {product.headline}
+                {/* Subtitle directly UNDERNEATH headline, font-sans and text-zinc-500 */}
+                <p className="text-sm font-sans text-zinc-500 leading-relaxed">
+                  {product.subtitle}
                 </p>
 
                 {/* Operational Highlights */}
@@ -176,8 +174,8 @@ export function ProductsSection() {
                 </div>
               </div>
 
-              {/* Card Footer CTAs */}
-              <div className="pt-5 mt-6 border-t border-[#E4E4E7] flex flex-wrap items-center justify-between gap-3">
+              {/* Card Footer CTAs pushed to bottom */}
+              <div className="mt-auto pt-4 border-t border-zinc-200 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   {product.primaryCta ? (
                     <Button
@@ -185,7 +183,7 @@ export function ProductsSection() {
                       variant="primary"
                       size="sm"
                       isExternal={product.primaryCta.isExternal}
-                      className="gap-1.5 text-xs"
+                      className="gap-1.5 text-xs whitespace-nowrap"
                     >
                       <span>{product.primaryCta.label}</span>
                     </Button>
@@ -195,7 +193,7 @@ export function ProductsSection() {
                       variant="outline"
                       size="sm"
                       isExternal={product.secondaryCta.isExternal}
-                      className="gap-1.5 text-xs text-zinc-700"
+                      className="gap-1.5 text-xs text-zinc-700 whitespace-nowrap"
                     >
                       <span>{product.secondaryCta.label}</span>
                     </Button>
@@ -207,7 +205,7 @@ export function ProductsSection() {
                     href={product.secondaryCta.href}
                     target={product.secondaryCta.isExternal ? "_blank" : undefined}
                     rel={product.secondaryCta.isExternal ? "noopener noreferrer" : undefined}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-zinc-700 hover:text-zinc-950 transition-colors"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-zinc-700 hover:text-zinc-950 transition-colors whitespace-nowrap"
                   >
                     <span>{product.secondaryCta.label}</span>
                   </a>

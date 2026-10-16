@@ -1,7 +1,14 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-export type BadgeVariant = "emerald" | "amber" | "slate" | "active" | "beta" | "archived" | "case-study";
+export type BadgeVariant =
+  | "emerald"
+  | "amber"
+  | "slate"
+  | "active"
+  | "beta"
+  | "archived"
+  | "case-study";
 
 interface StatusBadgeProps {
   variant?: BadgeVariant;
@@ -44,12 +51,15 @@ export function StatusBadge({
   };
 
   const styles = getStyles();
-  const textContent = children || label;
+
+  // Sanitize label or string children to strip leading bullet/dot characters
+  const rawText = typeof children === "string" ? children : label || "";
+  const sanitizedText = rawText ? rawText.replace(/^[•·\s]+/, "").trim() : children;
 
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full border text-[11px] font-mono font-medium uppercase tracking-wider select-none shrink-0 transition-colors",
+        "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full border text-[11px] font-mono font-medium uppercase tracking-wider select-none shrink-0 transition-colors whitespace-nowrap",
         styles.container,
         className
       )}
@@ -60,7 +70,7 @@ export function StatusBadge({
           aria-hidden="true"
         />
       )}
-      <span>{textContent}</span>
+      <span>{sanitizedText}</span>
     </span>
   );
 }

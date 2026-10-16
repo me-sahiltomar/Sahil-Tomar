@@ -5,7 +5,7 @@ import { CASE_STUDIES_DATA, CaseStudyItem } from "@/content/portfolioData";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { CaseStudyModal } from "./CaseStudyModal";
-import { ArrowRight, ShieldAlert, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldAlert } from "lucide-react";
 
 export function CaseStudiesSection() {
   const [selectedCaseStudy, setSelectedCaseStudy] = React.useState<CaseStudyItem | null>(null);
@@ -32,11 +32,11 @@ export function CaseStudiesSection() {
                   variant={featured.badgeVariant}
                   label={featured.badge}
                 />
-                <span className="text-xs font-mono text-zinc-500">
+                <span className="text-xs font-mono text-zinc-500 whitespace-nowrap">
                   {featured.roleTimeline}
                 </span>
               </div>
-              <span className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 font-semibold">
+              <span className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 font-semibold whitespace-nowrap">
                 FEATURED POST-MORTEM
               </span>
             </div>
@@ -90,7 +90,7 @@ export function CaseStudiesSection() {
               <button
                 type="button"
                 onClick={() => setSelectedCaseStudy(featured)}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#09090B] text-white text-xs sm:text-sm font-semibold hover:bg-zinc-800 transition-colors shadow-xs"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#09090B] text-white text-xs sm:text-sm font-semibold hover:bg-zinc-800 transition-colors shadow-xs whitespace-nowrap"
               >
                 <span>Read Full Venture Post-Mortem</span>
                 <ArrowRight className="h-4 w-4" />
@@ -100,19 +100,19 @@ export function CaseStudiesSection() {
         </div>
 
         {/* 2. Grid of Standard Case Study Cards (2x2 Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           {standardCaseStudies.map((study) => (
             <div
               key={study.id}
-              className="flex flex-col justify-between rounded-lg border border-[#E4E4E7] bg-[#FAFAFA] p-6 sm:p-7 shadow-xs hover:border-zinc-300 transition-all duration-150"
+              className="flex flex-col h-full justify-between rounded-lg border border-[#E4E4E7] bg-[#FAFAFA] p-6 sm:p-7 shadow-xs hover:border-zinc-300 transition-all duration-150"
             >
-              <div className="space-y-3.5">
+              <div className="space-y-3.5 flex flex-col flex-1">
                 <div className="flex items-center justify-between gap-2">
                   <StatusBadge
                     variant={study.badgeVariant}
                     label={study.badge}
                   />
-                  <span className="text-[11px] font-mono text-zinc-400">
+                  <span className="text-[11px] font-mono text-zinc-400 whitespace-nowrap">
                     EXCELERATE SPRINT
                   </span>
                 </div>
@@ -135,11 +135,12 @@ export function CaseStudiesSection() {
                 </div>
               </div>
 
-              <div className="pt-4 mt-5 border-t border-[#E4E4E7]">
+              {/* Footer aligned across cards */}
+              <div className="mt-auto pt-4 border-t border-zinc-200">
                 <button
                   type="button"
                   onClick={() => setSelectedCaseStudy(study)}
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#09090B] hover:text-zinc-600 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#09090B] hover:text-zinc-600 transition-colors whitespace-nowrap"
                 >
                   <span>Inspect Case Study</span>
                   <ArrowRight className="h-3.5 w-3.5 text-zinc-400" />

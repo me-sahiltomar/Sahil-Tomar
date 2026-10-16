@@ -1,6 +1,5 @@
 import * as React from "react";
-import Link from "next/link";
-import { ExternalLink, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -160,7 +159,7 @@ export function Footer() {
             &copy; {currentYear} Sahil Tomar. All rights reserved.
           </div>
           <div>
-            Evidence Before Expansion · Built with Next.js 14 &amp; Tailwind CSS
+            Evidence Before Expansion · Ecosystem Layer: sahiltomar.pro
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export function TimelineSection() {
         />
 
         {/* Swiss-grid Vertical Timeline */}
-        <div className="relative border-l border-zinc-200 ml-3 sm:ml-40 space-y-10 sm:space-y-12">
+        <div className="relative border-l border-zinc-200 ml-3 md:ml-60 space-y-10 sm:space-y-12">
           {TIMELINE_DATA.map((item) => (
             <div key={item.id} className="relative pl-6 sm:pl-8 group">
               {/* Timeline Marker Dot */}
@@ -23,10 +23,10 @@ export function TimelineSection() {
                 aria-hidden="true"
               />
 
-              {/* Desktop Left Date Node (absolute positioned on desktop) */}
-              <div className="hidden sm:block absolute -left-40 top-1 w-32 text-right">
-                <span className="block text-xs font-mono font-medium text-zinc-900">
-                  {item.dates.split(" | ")[0]}
+              {/* Desktop Left Date Node (widened md:w-52 and whitespace-nowrap to prevent date wrapping) */}
+              <div className="hidden md:block absolute -left-60 top-1 w-52 text-right pr-4 shrink-0">
+                <span className="block text-xs font-mono font-medium text-zinc-900 whitespace-nowrap">
+                  {item.dates}
                 </span>
                 <span className="block text-[11px] font-mono text-zinc-400">
                   {item.location}
@@ -34,8 +34,8 @@ export function TimelineSection() {
               </div>
 
               {/* Mobile Date Header */}
-              <div className="sm:hidden mb-2">
-                <span className="inline-block text-xs font-mono font-semibold text-zinc-900">
+              <div className="md:hidden mb-2">
+                <span className="inline-block text-xs font-mono font-semibold text-zinc-900 whitespace-nowrap">
                   {item.dates}
                 </span>
               </div>
@@ -51,7 +51,7 @@ export function TimelineSection() {
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs font-mono text-zinc-500 hover:text-zinc-900 transition-colors"
+                      className="inline-flex items-center gap-1 text-xs font-mono text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap"
                     >
                       <span>{item.org}</span>
                       <ExternalLink className="h-3 w-3" />

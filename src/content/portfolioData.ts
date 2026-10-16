@@ -179,8 +179,8 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
   {
     id: "finstation",
     title: "FinStation — 0-to-1 Venture & Regulatory Forensics",
-    roleTimeline: "Co-Founder | June 2026 – October 2026 | Delhi NCR",
-    badge: "• 0-TO-1 VENTURE & REGULATORY PIVOT",
+    roleTimeline: "Co-Founder | Jun 2026 – Oct 2026 | Delhi NCR",
+    badge: "0-TO-1 VENTURE & REGULATORY PIVOT",
     badgeVariant: "amber",
     isFeatured: true,
     summary:
@@ -221,7 +221,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     id: "pepagora",
     title: "Pepagora B2B Marketplace — Onboarding & Competitive Benchmarking",
     roleTimeline: "Business Operations & Compliance Sprint | Excelerate",
-    badge: "• CASE STUDY",
+    badge: "CASE STUDY",
     badgeVariant: "slate",
     summary:
       "Benchmarked activation and verification funnels against IndiaMART, Alibaba.com, and TradeIndia to propose frictionless verification and re-engagement workflows.",
@@ -246,7 +246,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     id: "projectup",
     title: "ProjectUp — 9-Department Organizational Adoption & RCA",
     roleTimeline: "Team Lead (12-Member Global Team) | Project Management Associate Track (Excelerate)",
-    badge: "• CASE STUDY",
+    badge: "CASE STUDY",
     badgeVariant: "slate",
     summary:
       "Diagnosed internal software adoption failure across 150 employees and 9 departments. Delivered Root Cause Analysis (RCA), an 8-week implementation roadmap, and a 3-week pilot framework.",
@@ -271,7 +271,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     id: "digital-strategy",
     title: "Multi-Stakeholder Digital Strategy & GTM Architecture",
     roleTimeline: "Team Lead (Team 5) | Digital Strategy Track (Excelerate)",
-    badge: "• CASE STUDY",
+    badge: "CASE STUDY",
     badgeVariant: "slate",
     summary:
       "Mapped learner, university, and employer journeys across 190+ countries. Built a 4-pillar content architecture and 5 production-ready campaign briefs with KPI frameworks.",
@@ -296,7 +296,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     id: "ai-connect",
     title: "AI Connect 2026 — Global Programme Delivery & $20k Budget Model",
     roleTimeline: "Team Lead | Project Management Trainee Track (Excelerate)",
-    badge: "• CASE STUDY",
+    badge: "CASE STUDY",
     badgeVariant: "slate",
     summary:
       "Engineered a 5-month Work Breakdown Structure (WBS), dependency matrix, stakeholder QA framework, and an activity-based $20,000 budget simulation for a 10-day global virtual AI summit.",
@@ -325,7 +325,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     title: "CevonX — Founder & Product Builder",
     org: "cevonx.com",
     role: "Founder & Product Builder",
-    dates: "September 2026 – Present",
+    dates: "Sept 2026 – Present",
     location: "Delhi NCR",
     link: "https://cevonx.com",
     details:
@@ -336,7 +336,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     title: "Excelerate — Team Lead (Global Strategy, Project Management & Operations Sprints)",
     org: "Excelerate Global",
     role: "Team Lead",
-    dates: "June 2026 – October 2026",
+    dates: "Jun 2026 – Oct 2026",
     location: "Remote (Cross-Border Teams across Asia & Africa)",
     details:
       "Served as Team Lead across structured 4-week consulting and delivery sprints to build practical operational frameworks: Project Management Associate (Led 12-member team on ProjectUp 9-department RCA & pilot), Digital Strategy Associate (Led Team 5 on multi-stakeholder GTM & 5 campaign briefs), Project Management Trainee (5-month WBS & $20k budget for AI Connect 2026), and Business Operations & Compliance (Pepagora B2B marketplace benchmarking).",
@@ -346,7 +346,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     title: "FinStation — Co-Founder (0-to-1 Venture Initiative)",
     org: "FinStation",
     role: "Co-Founder",
-    dates: "June 2026 – October 2026",
+    dates: "Jun 2026 – Oct 2026",
     location: "New Delhi / NCR",
     details:
       "Led product strategy, market/API research, and early operations for an AI retail investor platform. Screened and interviewed 15–20+ intern candidates, onboarded ~35 beta users, conducted user discovery calls, and executed a disciplined regulatory pause after uncovering SEBI RA/IA compliance constraints.",
@@ -356,7 +356,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     title: "CountryEdu Pvt. Ltd. — Business Analyst Intern",
     org: "CountryEdu Pvt. Ltd.",
     role: "Business Analyst Intern",
-    dates: "October 2025 – December 2025",
+    dates: "Oct 2025 – Dec 2025",
     location: "Gurugram, Haryana",
     details:
       "Conducted competitor research, requirement gathering, business requirements documentation (BRDs), and internal workflow mapping to identify process-improvement opportunities.",
@@ -366,7 +366,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     title: "Independent — Team Lead (Hackathons & Strategy Competitions)",
     org: "Independent",
     role: "Team Lead",
-    dates: "August 2025 – Present",
+    dates: "Aug 2025 – Present",
     location: "National / India",
     details:
       "Led 3–6 member interdisciplinary teams across national problem-solving competitions, including Smart India Hackathon 2025 (Teams Quantum Coders & Victus), Digital Health Systems Optimization Challenge, and the RIT City Strategy Challenge.",
