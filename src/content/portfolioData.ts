@@ -29,6 +29,7 @@ export interface CaseStudyItem {
   badgeVariant: "emerald" | "amber" | "slate";
   summary: string;
   deliverable?: string;
+  domainTag?: string;
   isFeatured?: boolean;
   metrics?: { value: string; label: string }[];
   strategicLesson?: string;
@@ -49,6 +50,7 @@ export interface TimelineItem {
   location: string;
   details: string;
   link?: string;
+  contextBadge?: string;
 }
 
 export interface CapabilityColumn {
@@ -66,7 +68,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     statusLabel: "ACTIVE",
     category: "DOCUMENT VISION & VALIDATION",
     headline: "AI document intelligence for extracting and validating financial records from receipts and invoices.",
-    subtitle: "AI-powered document intelligence & financial validation platform — A CevonX Product",
+    subtitle: "AI-powered document intelligence & financial validation platform",
     operationalHighlights: [
       "Multi-provider vision processing with hot-swapping between OpenAI, Gemini, and Groq models",
       "Dynamic Pydantic schema prompting enforcing strict JSON schema contracts and confidence scoring",
@@ -96,7 +98,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     statusLabel: "ACTIVE",
     category: "RESEARCH / OPPORTUNITY INTELLIGENCE",
     headline: "Discovers real problems and identifies software products worth building.",
-    subtitle: "Evidence-first product research & opportunity intelligence engine — A CevonX Product",
+    subtitle: "Evidence-first product research & opportunity intelligence engine",
     operationalHighlights: [
       "Automated multi-source signal harvesting from developer and operator discussions",
       "20-field structured opportunity model separating direct user evidence from AI inference",
@@ -127,7 +129,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     statusLabel: "BETA",
     category: "OPERATIONAL INTELLIGENCE",
     headline: "Startup signal prioritization and operational decision engine.",
-    subtitle: "AI-powered founder decision support & priority inbox — A CevonX Product",
+    subtitle: "AI-powered founder decision support & priority inbox",
     operationalHighlights: [
       "Context-aware signal parsing across customer risk, sales follow-ups, and product signals",
       "4-stage workflow (Understand → Detect → Prioritize → Recommend) generating explainable Decision Briefs",
@@ -157,7 +159,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     statusLabel: "ARCHIVED",
     category: "EXPERIMENTAL / HEALTH OS",
     headline: "Human Health OS experimental prototype and longitudinal health research.",
-    subtitle: "Systems architecture & biomarker normalization spike — A CevonX Product",
+    subtitle: "Systems architecture & biomarker normalization spike",
     operationalHighlights: [
       "Unified biomarker normalization architecture prototype and longitudinal timeline visualization",
       "Deliberately concluded and preserved as architectural proof-of-work under studio governance",
@@ -223,6 +225,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     roleTimeline: "Business Operations & Compliance Sprint | Excelerate",
     badge: "CASE STUDY",
     badgeVariant: "slate",
+    domainTag: "B2B MARKETPLACE OPS",
     summary:
       "Benchmarked activation and verification funnels against IndiaMART, Alibaba.com, and TradeIndia to propose frictionless verification and re-engagement workflows.",
     deliverable:
@@ -248,6 +251,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     roleTimeline: "Team Lead (12-Member Global Team) | Project Management Associate Track (Excelerate)",
     badge: "CASE STUDY",
     badgeVariant: "slate",
+    domainTag: "CHANGE MANAGEMENT & RCA",
     summary:
       "Diagnosed internal software adoption failure across 150 employees and 9 departments. Delivered Root Cause Analysis (RCA), an 8-week implementation roadmap, and a 3-week pilot framework.",
     deliverable:
@@ -273,6 +277,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     roleTimeline: "Team Lead (Team 5) | Digital Strategy Track (Excelerate)",
     badge: "CASE STUDY",
     badgeVariant: "slate",
+    domainTag: "MULTI-SIDED GTM",
     summary:
       "Mapped learner, university, and employer journeys across 190+ countries. Built a 4-pillar content architecture and 5 production-ready campaign briefs with KPI frameworks.",
     deliverable:
@@ -298,6 +303,7 @@ export const CASE_STUDIES_DATA: CaseStudyItem[] = [
     roleTimeline: "Team Lead | Project Management Trainee Track (Excelerate)",
     badge: "CASE STUDY",
     badgeVariant: "slate",
+    domainTag: "PROGRAMME & BUDGET MODEL",
     summary:
       "Engineered a 5-month Work Breakdown Structure (WBS), dependency matrix, stakeholder QA framework, and an activity-based $20,000 budget simulation for a 10-day global virtual AI summit.",
     deliverable:
@@ -328,6 +334,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     dates: "Sept 2026 – Present",
     location: "Delhi NCR",
     link: "https://cevonx.com",
+    contextBadge: "cevonx.com",
     details:
       "Established an applied AI product studio (productstudio.cevonx.com) and commercial automation solutions layer (core.cevonx.com). Shipped LedgerLens, ProductScout, and PrioX (Beta) using 7-day rapid build loops and strict lifecycle governance.",
   },
@@ -338,6 +345,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     role: "Team Lead",
     dates: "Jun 2026 – Oct 2026",
     location: "Remote (Cross-Border Teams across Asia & Africa)",
+    contextBadge: "4 Global Sprints · Team Lead",
     details:
       "Served as Team Lead across structured 4-week consulting and delivery sprints to build practical operational frameworks: Project Management Associate (Led 12-member team on ProjectUp 9-department RCA & pilot), Digital Strategy Associate (Led Team 5 on multi-stakeholder GTM & 5 campaign briefs), Project Management Trainee (5-month WBS & $20k budget for AI Connect 2026), and Business Operations & Compliance (Pepagora B2B marketplace benchmarking).",
   },
@@ -348,6 +356,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     role: "Co-Founder",
     dates: "Jun 2026 – Oct 2026",
     location: "New Delhi / NCR",
+    contextBadge: "0-to-1 Venture Discovery",
     details:
       "Led product strategy, market/API research, and early operations for an AI retail investor platform. Screened and interviewed 15–20+ intern candidates, onboarded ~35 beta users, conducted user discovery calls, and executed a disciplined regulatory pause after uncovering SEBI RA/IA compliance constraints.",
   },
@@ -358,6 +367,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     role: "Business Analyst Intern",
     dates: "Oct 2025 – Dec 2025",
     location: "Gurugram, Haryana",
+    contextBadge: "Requirements & Process Ops",
     details:
       "Conducted competitor research, requirement gathering, business requirements documentation (BRDs), and internal workflow mapping to identify process-improvement opportunities.",
   },
@@ -368,6 +378,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     role: "Team Lead",
     dates: "Aug 2025 – Present",
     location: "National / India",
+    contextBadge: "National Hackathons & Strategy",
     details:
       "Led 3–6 member interdisciplinary teams across national problem-solving competitions, including Smart India Hackathon 2025 (Teams Quantum Coders & Victus), Digital Health Systems Optimization Challenge, and the RIT City Strategy Challenge.",
   },

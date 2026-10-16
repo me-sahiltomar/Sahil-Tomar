@@ -37,7 +37,7 @@ export function CaseStudiesSection() {
                 </span>
               </div>
               <span className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 font-semibold whitespace-nowrap">
-                FEATURED POST-MORTEM
+                FEATURED VENTURE FORENSICS
               </span>
             </div>
 
@@ -92,7 +92,7 @@ export function CaseStudiesSection() {
                 onClick={() => setSelectedCaseStudy(featured)}
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#09090B] text-white text-xs sm:text-sm font-semibold hover:bg-zinc-800 transition-colors shadow-xs whitespace-nowrap"
               >
-                <span>Read Full Venture Post-Mortem</span>
+                <span>Read Venture &amp; Regulatory Case Study</span>
                 <ArrowRight className="h-4 w-4" />
               </button>
             </div>
@@ -112,8 +112,8 @@ export function CaseStudiesSection() {
                     variant={study.badgeVariant}
                     label={study.badge}
                   />
-                  <span className="text-[11px] font-mono text-zinc-400 whitespace-nowrap">
-                    EXCELERATE SPRINT
+                  <span className="text-[11px] font-mono text-zinc-400 whitespace-nowrap uppercase tracking-wider font-semibold">
+                    {study.domainTag || "CASE STUDY"}
                   </span>
                 </div>
 

@@ -46,17 +46,21 @@ export function TimelineSection() {
                   <h3 className="text-base sm:text-lg font-bold text-[#09090B] tracking-tight">
                     {item.title}
                   </h3>
-                  {item.link && (
+                  {item.link ? (
                     <a
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-xs font-mono text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap"
+                      className="inline-flex items-center gap-1 text-xs font-mono text-zinc-500 bg-zinc-100 hover:bg-zinc-200 hover:text-zinc-900 px-2.5 py-1 rounded transition-colors whitespace-nowrap"
                     >
-                      <span>{item.org}</span>
+                      <span>{item.contextBadge || item.org}</span>
                       <ExternalLink className="h-3 w-3" />
                     </a>
-                  )}
+                  ) : item.contextBadge ? (
+                    <span className="text-xs font-mono text-zinc-500 bg-zinc-100 px-2.5 py-1 rounded whitespace-nowrap">
+                      {item.contextBadge}
+                    </span>
+                  ) : null}
                 </div>
 
                 <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">

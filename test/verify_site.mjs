@@ -65,7 +65,7 @@ async function runHttpTests() {
       "Sahil Tomar",
       "OPERATOR &amp; BUILDER",
       "Decoding startup bottlenecks and engineering practical AI systems.",
-      "FOUNDER&#x27;S OFFICE · PRODUCT &amp; AI OPERATIONS",
+      "AVAILABLE FOR HIGH-OWNERSHIP ROLES",
       "Software Built via CevonX Product Studio",
       "LedgerLens",
       "ProductScout",
