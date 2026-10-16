@@ -13,14 +13,19 @@ export function HeroSection() {
             <span>FOUNDER&apos;S OFFICE · PRODUCT &amp; AI OPERATIONS</span>
           </div>
 
-          {/* H1 Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-[#09090B] tracking-tight leading-[1.12] max-w-5xl">
-            Decoding startup bottlenecks and engineering practical AI systems.
-          </h1>
+          {/* Primary Identity: Name H1 & Subtitle */}
+          <div className="space-y-2">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#09090B] tracking-tight leading-tight">
+              Sahil Tomar
+            </h1>
+            <p className="text-lg sm:text-xl font-medium text-zinc-700 tracking-tight">
+              Founder&apos;s Office · Product &amp; AI Operations Generalist
+            </p>
+          </div>
 
-          {/* Subtitle / Executive Thesis */}
+          {/* Mission Statement & Executive Thesis */}
           <p className="text-base sm:text-lg md:text-xl text-zinc-600 leading-relaxed max-w-4xl">
-            Computer Science graduate and AI-augmented product builder based in Delhi NCR. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
+            Decoding startup bottlenecks and engineering practical AI systems. Computer Science graduate and AI-augmented product builder based in Delhi NCR. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
           </p>
 
           {/* Action Buttons */}
