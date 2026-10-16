@@ -46,7 +46,7 @@ export function CapabilitiesSection() {
                 <ul className="space-y-2.5 pt-2">
                   {col.items.map((item, itemIdx) => (
                     <li key={itemIdx} className="flex items-start gap-2 text-xs sm:text-sm text-zinc-700">
-                      <span className="text-zinc-400 font-bold shrink-0 mt-0.5">•</span>
+                      <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-zinc-400 shrink-0 mt-2 select-none" />
                       <span className="leading-snug">{item}</span>
                     </li>
                   ))}

@@ -25,7 +25,7 @@ export function HeroSection() {
 
           {/* Mission Statement & Executive Thesis */}
           <p className="text-base sm:text-lg md:text-xl text-zinc-600 leading-relaxed max-w-4xl">
-            Computer Science graduate based in Delhi NCR. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
+            Computer Science graduate combining business analysis, product strategy, and full-stack AI execution. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
           </p>
 
           {/* Action Buttons */}

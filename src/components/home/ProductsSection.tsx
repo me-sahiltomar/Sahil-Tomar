@@ -154,7 +154,7 @@ export function ProductsSection() {
                   <ul className="space-y-1.5 text-xs text-zinc-600">
                     {product.operationalHighlights.map((highlight, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-zinc-400 font-bold shrink-0 mt-0.5">•</span>
+                        <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-zinc-400 shrink-0 mt-1.5 select-none" />
                         <span className="leading-relaxed">{highlight}</span>
                       </li>
                     ))}

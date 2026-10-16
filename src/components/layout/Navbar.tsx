@@ -42,7 +42,7 @@ export function Navbar() {
               className="flex items-center gap-2.5 sm:gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 rounded-sm shrink-0"
               aria-label="Sahil Tomar Executive Portfolio"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-[#09090B] text-xs font-bold font-mono text-white shadow-xs group-hover:bg-zinc-800 transition-colors shrink-0">
+              <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-md bg-[#09090B] text-xs font-bold font-mono text-white shadow-xs group-hover:bg-zinc-800 transition-colors shrink-0 select-none">
                 S
               </span>
               <div className="flex flex-row items-baseline gap-2 shrink-0">

@@ -11,7 +11,7 @@ export function Footer() {
           {/* Column 1: Identity & Architect Statement */}
           <div className="space-y-3">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#09090B] text-xs font-bold font-mono text-white">
+              <span aria-hidden="true" className="flex h-7 w-7 items-center justify-center rounded-md bg-[#09090B] text-xs font-bold font-mono text-white select-none shrink-0">
                 S
               </span>
               <span className="font-bold text-[#09090B] text-base tracking-tight">
