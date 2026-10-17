@@ -9,6 +9,7 @@ export interface ProductItem {
   subtitle: string;
   operationalHighlights: string[];
   techStack: string[];
+  githubUrl?: string;
   primaryCta?: {
     label: string;
     href: string;
@@ -71,7 +72,8 @@ export const PRODUCTS_DATA: ProductItem[] = [
     subtitle: "AI-powered document intelligence & financial validation platform",
     operationalHighlights: [
       "Multi-provider vision processing with hot-swapping between OpenAI, Gemini, and Groq models",
-      "Dynamic Pydantic schema prompting enforcing strict JSON schema contracts and confidence scoring",
+      "Dynamic Pydantic v2 schema prompting enforcing strict JSON schema contracts and confidence scoring",
+      "Production-hardened Docker container with Prometheus metrics (/metrics) and Grafana observability",
     ],
     techStack: [
       "Next.js 14 App Router",
@@ -79,6 +81,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
       "Multi-Provider Vision (OpenAI, Gemini, Groq)",
       "Supabase (PostgreSQL + CDN)",
     ],
+    githubUrl: "https://github.com/me-sahiltomar/LedgerLens",
     primaryCta: {
       label: "Open LedgerLens ↗",
       href: "https://ledgerlens.cevonx.com",
@@ -102,6 +105,7 @@ export const PRODUCTS_DATA: ProductItem[] = [
     operationalHighlights: [
       "Automated multi-source signal harvesting from developer and operator discussions",
       "20-field structured opportunity model separating direct user evidence from AI inference",
+      "Durable Supabase persistence (PostgreSQL 17.6 + RLS) with Next.js server actions and fallback cache",
     ],
     techStack: [
       "Next.js 14 App Router",
@@ -131,8 +135,9 @@ export const PRODUCTS_DATA: ProductItem[] = [
     headline: "Startup signal prioritization and operational decision engine.",
     subtitle: "AI-powered founder decision support & priority inbox",
     operationalHighlights: [
-      "Context-aware signal parsing across customer risk, sales follow-ups, and product signals",
+      "Context-aware signal parsing across customer churn risk, sales blockers, and product friction",
       "4-stage workflow (Understand → Detect → Prioritize → Recommend) generating explainable Decision Briefs",
+      "Frictionless demo mode pre-loaded with 3 operational startup scenarios for instant triage testing",
     ],
     techStack: [
       "Next.js 14 App Router",

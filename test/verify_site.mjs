@@ -65,7 +65,7 @@ async function runHttpTests() {
       "Sahil Tomar",
       "OPERATOR &amp; BUILDER",
       "Decoding startup bottlenecks and engineering practical AI systems.",
-      "AVAILABLE FOR HIGH-OWNERSHIP ROLES",
+      "AVAILABLE IMMEDIATELY · FULL-TIME",
       "Software Built via CevonX Product Studio",
       "LedgerLens",
       "ProductScout",
@@ -81,6 +81,8 @@ async function runHttpTests() {
       "The AI-Augmented Generalist Stack",
       "Ready to eliminate bottlenecks and ship high-leverage systems?",
       "sahiltomar2430@gmail.com",
+      "https://cal.com/me-sahiltomar",
+      "https://github.com/me-sahiltomar/LedgerLens",
       "Sahil_Tomar_Resume.pdf",
     ];
 

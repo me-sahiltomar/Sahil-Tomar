@@ -10,7 +10,7 @@ export function HeroSection() {
           {/* Top Pill Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ECFDF5] border border-[#A7F3D0] text-xs font-mono font-medium tracking-wider text-[#059669] select-none whitespace-nowrap">
             <span className="h-1.5 w-1.5 rounded-full bg-[#059669] shrink-0" aria-hidden="true" />
-            <span>AVAILABLE FOR HIGH-OWNERSHIP ROLES &amp; AI SPRINTS · DELHI NCR</span>
+            <span>AVAILABLE IMMEDIATELY · FULL-TIME (DELHI NCR / REMOTE) &amp; AI SPRINTS</span>
           </div>
 
           {/* Primary Identity: Name H1 & Subtitle */}
@@ -25,7 +25,7 @@ export function HeroSection() {
 
           {/* Mission Statement & Executive Thesis */}
           <p className="text-base sm:text-lg md:text-xl text-zinc-600 leading-relaxed max-w-4xl">
-            Computer Science graduate combining business analysis, product strategy, and full-stack AI execution. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
+            Computer Science graduate (2026) combining business analysis, product strategy, and full-stack AI execution. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
           </p>
 
           {/* Action Buttons */}

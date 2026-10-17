@@ -200,16 +200,28 @@ export function ProductsSection() {
                   ) : null}
                 </div>
 
-                {product.secondaryCta && product.primaryCta && (
-                  <a
-                    href={product.secondaryCta.href}
-                    target={product.secondaryCta.isExternal ? "_blank" : undefined}
-                    rel={product.secondaryCta.isExternal ? "noopener noreferrer" : undefined}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-zinc-700 hover:text-zinc-950 transition-colors whitespace-nowrap"
-                  >
-                    <span>{product.secondaryCta.label}</span>
-                  </a>
-                )}
+                <div className="flex items-center gap-4">
+                  {product.githubUrl && (
+                    <a
+                      href={product.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-zinc-700 hover:text-zinc-950 transition-colors whitespace-nowrap"
+                    >
+                      <span>GitHub ↗</span>
+                    </a>
+                  )}
+                  {product.secondaryCta && product.primaryCta && (
+                    <a
+                      href={product.secondaryCta.href}
+                      target={product.secondaryCta.isExternal ? "_blank" : undefined}
+                      rel={product.secondaryCta.isExternal ? "noopener noreferrer" : undefined}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-zinc-700 hover:text-zinc-950 transition-colors whitespace-nowrap"
+                    >
+                      <span>{product.secondaryCta.label}</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

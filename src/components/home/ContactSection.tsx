@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight, Calendar } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -31,16 +31,25 @@ export function ContactSection() {
                     Founder&apos;s Office / Strategy &amp; Ops / AI Ops
                   </h3>
                   <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
-                    Available for high-ownership roles in Delhi NCR (Gurugram/Noida/Delhi) or remote teams where I can bridge business problem-solving, product execution, and AI workflow automation.
+                    Available for immediate full-time onboarding in Delhi NCR (Gurugram/Noida/Delhi) or remote teams. While CevonX serves as my personal R&amp;D and proof-of-work engineering lab, my primary commitment is joining an ambitious founding team full-time as Founder&apos;s Office or Operations Lead.
                   </p>
                 </div>
 
-                <div className="pt-2">
+                <div className="pt-2 flex flex-wrap items-center gap-3">
                   <a
-                    href="mailto:sahiltomar2430@gmail.com"
+                    href="https://cal.com/me-sahiltomar"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 rounded-md bg-white text-[#09090B] text-xs sm:text-sm font-semibold hover:bg-zinc-100 transition-colors shadow-xs whitespace-nowrap"
                   >
-                    <Mail className="h-4 w-4 text-zinc-600" />
+                    <Calendar className="h-4 w-4 text-[#09090B]" />
+                    <span>Schedule 15-Min Intro ↗</span>
+                  </a>
+                  <a
+                    href="mailto:sahiltomar2430@gmail.com"
+                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-3.5 py-2.5 rounded-md border border-zinc-700 bg-zinc-800/80 text-zinc-200 text-xs sm:text-sm font-medium hover:text-white hover:bg-zinc-800 hover:border-zinc-600 transition-colors whitespace-nowrap"
+                  >
+                    <Mail className="h-4 w-4 text-zinc-400" />
                     <span>Email Sahil (sahiltomar2430@gmail.com) ↗</span>
                   </a>
                 </div>
@@ -60,12 +69,21 @@ export function ContactSection() {
                   </p>
                 </div>
 
-                <div className="pt-2">
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://cal.com/me-sahiltomar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 rounded-md bg-white text-[#09090B] text-xs sm:text-sm font-semibold hover:bg-zinc-100 transition-colors shadow-xs whitespace-nowrap"
+                  >
+                    <Calendar className="h-4 w-4 text-[#09090B]" />
+                    <span>Schedule Scoping Call ↗</span>
+                  </a>
                   <a
                     href="https://core.cevonx.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 rounded-md border border-zinc-700 bg-zinc-800/80 text-white text-xs sm:text-sm font-semibold hover:bg-zinc-800 hover:border-zinc-600 transition-colors whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-3.5 py-2.5 rounded-md border border-zinc-700 bg-zinc-800/80 text-zinc-200 text-xs sm:text-sm font-semibold hover:text-white hover:bg-zinc-800 hover:border-zinc-600 transition-colors whitespace-nowrap"
                   >
                     <span>Work with CevonX Core</span>
                     <ArrowUpRight className="h-4 w-4 text-zinc-400" />
