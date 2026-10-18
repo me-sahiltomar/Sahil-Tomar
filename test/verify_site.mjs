@@ -64,7 +64,7 @@ async function runHttpTests() {
     const expectedTokens = [
       "Sahil Tomar",
       "OPERATOR &amp; BUILDER",
-      "Decoding startup bottlenecks and engineering practical AI systems.",
+      "Diagnosing bottlenecks, automating operations, and shipping software that scales.",
       "AVAILABLE IMMEDIATELY · FULL-TIME",
       "Software Built via CevonX Product Studio",
       "LedgerLens",

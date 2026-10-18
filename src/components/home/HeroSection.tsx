@@ -19,13 +19,13 @@ export function HeroSection() {
               Sahil Tomar
             </h1>
             <p className="text-lg sm:text-xl font-medium text-zinc-700 tracking-tight">
-              Startup Operator &amp; AI-Augmented Product Builder — Decoding bottlenecks and engineering practical AI systems.
+              Startup Operator &amp; Full-Stack AI Builder — Diagnosing bottlenecks, automating operations, and shipping software that scales.
             </p>
           </div>
 
           {/* Mission Statement & Executive Thesis */}
           <p className="text-base sm:text-lg md:text-xl text-zinc-600 leading-relaxed max-w-4xl">
-            Computer Science graduate (2026) combining business analysis, product strategy, and full-stack AI execution. My mission is to increase startup survival and execution speed by diagnosing why early-stage ventures stall, preventing avoidable operational mistakes, and building software systems that turn company-building into a repeatable discipline.
+            I bridge business strategy and technical execution. My mission is to increase startup survival and execution speed by eliminating operational drag, preventing avoidable execution mistakes, and building systems that turn company-building into a repeatable discipline.
           </p>
 
           {/* Action Buttons */}
@@ -41,7 +41,7 @@ export function HeroSection() {
           </div>
 
           {/* 3-Column Metadata Strip (Below CTAs, full-width aligned) */}
-          <div className="w-full border-t border-zinc-200 pt-6 mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
+          <div className="w-full border-t border-zinc-200 pt-8 mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
             <div className="space-y-1">
               <span className="block text-[11px] font-mono uppercase tracking-widest text-zinc-400 font-medium">
                 TARGET ROLES
@@ -92,7 +92,7 @@ export function HeroSection() {
                 Evidence Before Expansion
               </p>
               <p className="font-mono text-xs text-zinc-500">
-                7-Day Build Loops · Lifecycle Governance
+                Rapid Prototyping · Lifecycle Governance
               </p>
             </div>
           </div>
